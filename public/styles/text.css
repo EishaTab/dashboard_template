@@ -1,0 +1,7 @@
+.sec_text {
+    color: var(--secondary-text-color);
+}
+
+.pri_text {
+    color: var(--text-color);
+}

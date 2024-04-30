@@ -1,0 +1,17 @@
+button{
+    cursor: pointer;
+    border: none;
+  }
+  .primary_btn{
+    background-color:var( --seconday-bg-color);
+    border:1px var( --secondary-text-color) solid;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 4px;
+    scale: 0.9;
+    transition:background-color .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .primary_btn:hover{
+    background-color: var(--background-color);
+  }

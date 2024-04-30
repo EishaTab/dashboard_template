@@ -1,33 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('../../public/styles/navbar.css');
+@import url('../../public/styles/button.css');
+@import url('../../public/styles/text.css');
+@import url('../../public/styles/card.css');
+@import url('../../public/styles/sidebar.css');
+@import url('../../public/styles/dashboard.css');
 
+
+/* Light theme variables (default) */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-color: #eb5e28;
+  --seconday-bg-color: #ccc5b9;
+  --text-color: #252422;
+  --secondary-text-color: #403D39;
+  --link-color: #0066ff;
+  --border-dark-color: #f381567a;
+  --tab-text-color: #ccc5b9 ;
+  --tab-hover-text:#252422;
+ 
+}
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../../public/fonts/Roboto-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../../public/fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../../public/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+/* Dark theme variables */
+body[theme="dark"] {
+  --background-color: #121212;
+  --seconday-bg-color: #333333;
+  --border-dark-color: #333333;
+  --text-color: #e0e0e0;
+  --link-color: #0095ff;
+  --border-color: #333333;
+  --tab-text-color: #CCC5B9;
+  --tab-hover-text:#e0e0e0;
+}
+
+/* Applying the variables */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--seconday-bg-color);
+  color: var(--text-color); 
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto Regular;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+ 
+
+svg {
+  cursor: pointer;
+  fill: currentColor
+}
+svg  path {
+  stroke:   currentColor;
+  
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

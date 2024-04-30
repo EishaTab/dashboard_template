@@ -1,0 +1,32 @@
+.dashboard_container {
+    background-color: rgb(46, 20, 24);
+}
+
+.db_content {
+    width: calc(100vw - 300px);
+    margin-left: 300px;
+    transition: margin-left .5s cubic-bezier(0.075, 0.82, 0.165, 1), width .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.db_content.opened {
+    width: calc(100vw - 60px);
+    margin-left: 60px;
+}
+
+.db_comp{
+    min-height: 90vh;
+    
+}
+
+@media (max-width:480px) {
+
+    .db_content { 
+        width:100vw;
+        margin-left: 0px;
+        transition: margin-left .5s cubic-bezier(0.075, 0.82, 0.165, 1), width .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .db_content.opened { 
+        width: 100vw;
+        margin-left: 0px;
+    }
+}

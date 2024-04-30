@@ -1,0 +1,13 @@
+
+.custom_card{
+    background-color:var( --seconday-bg-color);
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 4px;
+    scale: 0.9;
+    transition:scale .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .custom_card:hover{
+    scale: 1;
+  }

@@ -1,0 +1,20 @@
+.topbar_container{
+    background-color: var(--background-color);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.toggle,
+#theme-toggle{
+    color: var(--tab-text-color);
+}
+@media (max-width:480px) {
+    .toggle-cross{
+        position: fixed;
+        bottom: 30px;
+        right: 10px;
+        z-index: 100000;
+    
+    }
+}

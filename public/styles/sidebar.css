@@ -1,0 +1,86 @@
+.sb_container {
+    position: fixed;
+    z-index: 10;
+    width: 300px;
+    background-color: var(--background-color);
+    border: 1px var(--border-dark-color) solid;
+    border-left: none;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: left .5s cubic-bezier(0.075, 0.82, 0.165, 1), width .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#sidebar ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    list-style: none;
+}
+
+#sidebar ul li {
+    color: var(--tab-text-color);
+    padding: 20px 40px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    scale: 0.9;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap:8px;
+    text-wrap: nowrap;
+}
+#sidebar.closed ul li {
+    color: var(--tab-text-color);
+    padding: 20px 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    scale: 0.9;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap:14px;
+    text-wrap: nowrap;
+
+}
+#sidebar.closed ul li span{
+
+    font-family: 'Roboto Medium';
+}
+#sidebar ul li:first-child{
+    margin-bottom: 20px;
+}
+#sidebar ul li:not(:first-child):hover {
+    background-color: var(--seconday-bg-color);
+    color: var(--tab-hover-text);
+    scale: 1;
+}
+#sidebar:not(.closed) ul li:not(:first-child):hover{
+border-left: 4px var(--background-color) solid;}
+.sb_container.closed {
+    /* left: -300px; */
+    width: 60px;
+}
+
+@media (max-width:480px) {
+    .sb_container {
+        width: 0px;
+        border: none;
+    } 
+    .sb_container.sm {
+        width: 300px;
+    }
+
+    .sb_container.closed {
+        width: 0px;
+
+    }
+}
