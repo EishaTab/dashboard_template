@@ -58,6 +58,11 @@
 #sidebar ul li:first-child{
     margin-bottom: 20px;
 }
+#sidebar ul li:not(:first-child){
+    border-bottom: 1px #d8d8d8 solid;
+}
+
+
 #sidebar ul li:not(:first-child):hover {
     background-color: var(--seconday-bg-color);
     color: var(--tab-hover-text);

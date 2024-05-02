@@ -10,7 +10,7 @@ export default function Orders() {
   const filterSettings = { type: 'Excel' };
   return (
     <>
-      <h2>Syncfusion React Grid Component</h2>
+      <h2>Recent Orders </h2>
       <GridComponent
         dataSource={data}
         allowGrouping={true}
