@@ -3,7 +3,6 @@ import Dashboard from '@/components/dashboard/Dashboard'
 import React from 'react'
 import { registerLicense } from '@syncfusion/ej2-base';
 
-// Registering Syncfusion license key
 registerLicense('Ngo9BigBOggjHTQxAR8/V1NBaF5cXmZCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXpecnRUR2BdVUZ2WEU=');
  
 const Home = () => {

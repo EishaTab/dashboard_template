@@ -7,9 +7,6 @@
 @import url('../../public/styles/card.css');
 @import url('../../public/styles/sidebar.css');
 @import url('../../public/styles/dashboard.css');
-@import url('../../public/styles/tailwind-sync/tailwind.css');
-
-
 
 /* Light theme variables (default) */
 :root {
